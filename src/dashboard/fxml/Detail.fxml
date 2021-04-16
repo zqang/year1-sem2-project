@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.fxml.MainController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Details" textAlignment="CENTER" wrapText="false">
+         <font>
+            <Font name="Calibri Light" size="36.0" fx:id="x1" />
+         </font>
+      </Label>
+      <TextField fx:id="detailTextField" layoutY="100.0" prefHeight="668.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

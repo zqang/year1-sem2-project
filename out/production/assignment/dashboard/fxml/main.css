@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #fff;
+}
+
+.button{
+    -fx-background-color: #180F63;
+}
+
+.sidebar{
+    -fx-background-color: #180F63;
+}

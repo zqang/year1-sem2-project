@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="infectedAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="768.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.fxml.InfectedController">
+   <stylesheets>
+      <URL value="@suspected.css" />
+   </stylesheets>
+   <children>
+      <Label layoutX="28.0" layoutY="20.0" text="Infected">
+         <font>
+            <Font name="Calibri Light" size="36.0" />
+         </font>
+      </Label>
+      <ListView fx:id="infectedList" layoutY="100.0" prefHeight="668.0" prefWidth="500.0" style="-fx-background-color: #fff;" />
+      <AnchorPane fx:id="detail" disable="true" layoutX="510.0" layoutY="110.0" prefHeight="668.0" prefWidth="500.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Detail">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="infectedDetail" editable="false" layoutX="10.0" layoutY="50.0" prefHeight="568.0" prefWidth="480.0" wrapText="true">
+               <font>
+                  <Font name="Arial" size="21.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

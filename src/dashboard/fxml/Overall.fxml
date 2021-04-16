@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="Content" fx:id="midAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-1.0" minWidth="-1.0" prefHeight="768.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.fxml.OverallController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Overall" textAlignment="CENTER" wrapText="false">
+         <font>
+            <Font name="Calibri Light" size="36.0" fx:id="x11" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="77.0" text="Day">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="77.0" text="Total Case">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="580.0" text="Current Infected">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="623.0" text="Current Suspected">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="668.0" text="Current Recovered">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="718.0" text="Current Dead">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="infectedNumber" layoutX="240.0" layoutY="574.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="deadNumber" layoutX="240.0" layoutY="711.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="suspectedNumber" layoutX="240.0" layoutY="617.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="recoveredNumber" layoutX="240.0" layoutY="662.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="day" layoutX="95.0" layoutY="71.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="860.0" layoutY="19.0" mnemonicParsing="false" onAction="#loadDataProcessStart" text="Day++">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="totalCase" layoutX="353.0" layoutY="71.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="580.0" text="Daily Infected">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="623.0" text="Daily Suspected">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="668.0" text="Daily Recovered">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="719.0" text="Daily Dead">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="dailyInfectedNumber" layoutX="700.0" layoutY="574.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="dailyDeadNumber" layoutX="700.0" layoutY="711.0" prefHeight="43.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="dailySuspectedNumber" layoutX="700.0" layoutY="617.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="dailyRecoveredNumber" layoutX="700.0" layoutY="662.0" prefHeight="40.0" prefWidth="100.0">
+         <font>
+            <Font name="Calibri Light" size="24.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="lineChart" animated="false" layoutX="27.0" layoutY="151.0" prefHeight="414.0" prefWidth="940.0" title="Cases per Day">
+        <xAxis>
+          <CategoryAxis label="day" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="cases" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>
